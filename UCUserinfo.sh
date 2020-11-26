@@ -1,12 +1,12 @@
 #!/bin/bash -x
 shopt -s extglob
-read -p "Enter the mobile number  :" mobilenumber
-pattern='(91){1}[ ][1-9]{1}[0-9]{9}$'
-if [[ $mobilenumber =~ $pattern ]] #+
+read -p "Enter the mobile number  :" password
+pattern='^.{8,}$'
+if [[ $password =~ $pattern ]] #+
 then
-        echo "mobile number is  is valid"
+        echo "password  is valid"
 else
-        echo "mobile number not valid"
+        echo "password not valid"
 fi
 
 
